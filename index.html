@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f6f8f">
+  <meta name="description" content="潮汐岛 3D：跟着游戏时辰、潮汐、天气、季节呼吸的海岛，地底下还有井下世界。">
+  <title>潮汐岛</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231f6f8f'/%3E%3Cpath d='M6 19c3-2 5-2 8 0s5 2 8 0 3-1 4 0' fill='none' stroke='%23f6e7c4' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M10 15c1-4 3-7 6-7s5 3 6 7z' fill='%2387c06a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="stage" aria-label="潮汐岛三维场景"></div>
+  <div id="ui"></div>
+
+  <div id="loader" role="status">
+    <div class="loader-inner">
+      <svg viewBox="0 0 120 64" class="loader-art" aria-hidden="true">
+        <path class="loader-isle" d="M28 40 C 34 26, 46 18, 58 20 C 66 14, 80 18, 86 30 C 92 32, 96 36, 98 40 Z" />
+        <path class="loader-tree" d="M50 22 l4 -9 4 9 z M66 20 l3 -7 3 7 z" />
+        <path class="loader-sea1" d="M0 42 C 10 36, 20 36, 30 42 S 50 48, 60 42 S 80 36, 90 42 S 110 48, 120 42" />
+        <path class="loader-sea2" d="M0 50 C 10 45, 20 45, 30 50 S 50 55, 60 50 S 80 45, 90 50 S 110 55, 120 50" />
+      </svg>
+      <div class="loader-name">潮汐岛</div>
+      <div class="loader-text">正在醒来</div>
+    </div>
+  </div>
+
+  <div id="fatal" class="hidden" role="alert">
+    <div class="fatal-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15.2c1.6-1.2 3.2-1.2 4.8 0s3.2 1.2 4.8 0 3.2-1.2 4.8 0 2.2 1 2.6.6"/><path d="M12 4v6.4"/><circle cx="12" cy="12.6" r=".4" fill="currentColor"/><path d="M4.5 19.4c2.5.9 5 .9 7.5 0s5-.9 7.5 0"/></svg>
+      <p class="fatal-msg"></p>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">潮汐岛需要打开 JavaScript 才能看。</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
