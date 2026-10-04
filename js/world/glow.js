@@ -1,7 +1,7 @@
 // 光晕：所有灯笼、窗光、灯塔灯的柔光点合在一个 Points 里画，一次绘制调用。
 // 每个光点属于一个分组，分组亮度每帧由时辰/地上地下状态决定。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 
 export const GLOW_GROUP = {

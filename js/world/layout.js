@@ -1,6 +1,6 @@
 // 布局：把地点数据落到地形上——定坐标、压平台、铺小路、定朝向。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { SURFACE, surfacePaths } from './places-data.js';
 import { coastPoint, naturalHeight, setPadsAndPaths, heightAt, getFeature, setupFeatures } from './terrain.js';

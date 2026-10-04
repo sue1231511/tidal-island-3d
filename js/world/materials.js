@@ -1,7 +1,7 @@
 // 共享材质 + 着色器注入（积雪、湿滩、随风摆动）+ 地上层整体淡出。
 // 所有地上材质统一登记，下井时一起变透明，回到地面再恢复。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 
 export const U = {

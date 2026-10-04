@@ -1,6 +1,6 @@
 // 几何拼装：同一个地点里同材质的零件合并成一个网格，减少手机上的绘制调用。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from './logger.js';
 
 const _m = new THREE.Matrix4();

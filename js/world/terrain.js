@@ -3,7 +3,7 @@
 // 崖与滩交替由“崖度”控制，退潮时浅滩露出，东南岬外有一条退潮才露的沙洲通往灯塔礁。
 // 坐标：y 向上，北 = -z，东 = +x。平潮海面 y = 0。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { createNoise2D, fbm, smoothstep, lerp, clamp, angleDiff, mulberry32 } from '../core/noise.js';
 import { inject, registerSurface, U } from './materials.js';

@@ -1,6 +1,6 @@
 // 天空：渐变穹顶 + 日月 + 星 + 低多边形云；光照与雾。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { mulberry32 } from '../core/noise.js';
 import { registerSurface } from './materials.js';

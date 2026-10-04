@@ -1,7 +1,7 @@
 // 小生命：海鸥、斑鸠（只在昼）、退潮滩上的螃蟹、跃出水面的鱼、蝴蝶、小馆的猫；
 // 以及季节的粒子：春花瓣、秋落叶、冬雪、夏夜萤火。数量都克制，不吵。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { mulberry32, smoothstep, clamp } from '../core/noise.js';
 import { heightAt, coastCoords, coastPoint, naturalHeight } from './terrain.js';

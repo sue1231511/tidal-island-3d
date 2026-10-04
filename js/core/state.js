@@ -2,7 +2,7 @@
 // 每个维度保存一组权重（和为 1），状态一变就从当前权重平滑走向新的独热权重。
 // 所有画面参数都是 36 种组合预设按权重混合出来的，所以任意时刻切换都不会硬切。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from './logger.js';
 import { stateAt, DIMS, DIM_SIZE } from './clock.js';
 import { smoothstep } from './noise.js';

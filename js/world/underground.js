@@ -2,7 +2,7 @@
 // 十处地点各自坐在一根岩柱顶上，按井下总览图从上（入口）到下（K 室）逐层下沉，
 // 石阶和栈道把它们连起来；洞底是一池地下水，水位跟着外面的潮汐涨落。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { mulberry32, smoothstep } from '../core/noise.js';
 import { Parts, G } from '../core/geo.js';

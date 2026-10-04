@@ -1,7 +1,7 @@
 // 海：径向网格（近处密、远处疏），水面高度 = 潮位。
 // 颜色按水深（地形高度贴图）从浅绿到深蓝；岸边一圈浪花；阵风起白浪；退潮时浅滩闪光。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { WORLD_HALF } from './terrain.js';
 import { registerSurface } from './materials.js';

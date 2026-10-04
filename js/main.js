@@ -1,8 +1,8 @@
 // 潮汐岛 3D：入口。
 // 组装地形、海、天、地点、植被、小生命、井下和界面；每帧按世界状态更新。
 
-import * as THREE from '../vendor/three.bundle.min.js';
-import { OrbitControls } from '../vendor/three.bundle.min.js';
+import * as THREE from '../lib/three.bundle.min.js';
+import { OrbitControls } from '../lib/three.bundle.min.js';
 import { log } from './core/logger.js';
 import { selfTest } from './core/clock.js';
 import { createWorldState } from './core/state.js';

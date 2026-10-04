@@ -1,7 +1,7 @@
 // 地上 14 处 + 灯塔。每处按它是什么来长：崖是崖、亭是亭、连理所是一条开花的廊。
 // 每个地点：一个 Group（局部 +z 朝向正面），静态零件合并，动的部分单独更新。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { mulberry32, lerp, clamp, smoothstep } from '../core/noise.js';
 import { Parts, G, gableGeometry, hipGeometry, archGeometry, textTexture, drawTextCanvas } from '../core/geo.js';

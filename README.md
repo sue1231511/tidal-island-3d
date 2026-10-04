@@ -12,7 +12,7 @@
 
 纯静态，无构建步骤。仓库根目录就是站点根目录（入口 `index.html`）。
 
-- **Zeabur**：直接导入本仓库即可，按静态站点部署。根目录**不要**放 `package.json`，否则会被识别成 Node 项目。
+- **Zeabur**：直接导入本仓库即可，按静态站点部署。根目录**不要**放 `package.json`，否则会被识别成 Node 项目；也不要把要发布的文件放进 `vendor`、`node_modules` 这类目录，Zeabur 会对它们返回 404。
 - **本地预览**：任意静态服务器，例如 `python3 -m http.server`，然后打开 `http://localhost:8000/`。直接双击 `index.html` 不行（ES 模块需要 http）。
 
 ## 目录
@@ -24,8 +24,8 @@ js/main.js            组装与主循环
 js/core/              日志、时钟（与服务端公式一致）、状态渐变、噪声、几何拼装
 js/world/             地形、海、天空、地点、植被、小生命、井下
 js/ui/                天时木牌、卡片、工作台、手绘 SVG 图标
-vendor/               three.js r186 + OrbitControls（压缩后的单文件，随仓库提供，不依赖 CDN）
-tools/build-vendor.sh 重新生成 vendor 文件
+lib/                  three.js r186 + OrbitControls（压缩后的单文件，随仓库提供，不依赖 CDN）
+tools/build-lib.sh    重新生成 lib 里的文件
 ```
 
 ## 调试

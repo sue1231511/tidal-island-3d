@@ -1,7 +1,7 @@
 // 植被与石头：全部实例化。阔叶树冠跟季节变色、冬天变稀；针叶树常绿；
 // 近岸的礁石半淹在水里，退潮时露出来。
 
-import * as THREE from '../../vendor/three.bundle.min.js';
+import * as THREE from '../../lib/three.bundle.min.js';
 import { log } from '../core/logger.js';
 import { mulberry32, createNoise2D, smoothstep } from '../core/noise.js';
 import { heightAt, slopeAt, coastCoords, pathWeightAt } from './terrain.js';
